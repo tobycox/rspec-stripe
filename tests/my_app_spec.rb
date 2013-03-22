@@ -13,6 +13,6 @@ describe MyApp do
 		customer = @app.create_customer
 		customer.should be_kind_of(Stripe::Mock::Customer)
 
-		customer.test.should == 'foo' 
+		customer.object.should == 'customer' 
 	end
 end
