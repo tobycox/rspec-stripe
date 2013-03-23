@@ -1,4 +1,3 @@
-#require_relative 'stripe_mocks_helper.rb'
 require_relative 'my_app.rb'
 require_relative '../lib/stripe_mocks_helper.rb'
 
