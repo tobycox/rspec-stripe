@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'stripe-rspec'
-  s.version     = '0.0.0'
+  s.version     = '1.0.0'
   s.date        = '2013-03-21'
   s.summary     = 'Mock Stripe objects for rspec'
   s.description = 'An rspec helper for mocking various Stripe objects'

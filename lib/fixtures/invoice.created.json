@@ -1,0 +1,64 @@
+{
+  "created": 1326853478,
+  "livemode": false,
+  "id": "evt_00000000000000",
+  "type": "invoice.created",
+  "object": "event",
+  "data": {
+    "object": {
+      "date": 1363826104,
+      "id": "in_00000000000000",
+      "period_start": 1363826104,
+      "period_end": 1363826104,
+      "lines": {
+        "data": [
+          {
+            "id": "su_1UwY9KCbMBSF3E",
+            "object": "line_item",
+            "type": "subscription",
+            "livemode": true,
+            "amount": 10000,
+            "currency": "usd",
+            "proration": false,
+            "period": {
+              "start": 1366504504,
+              "end": 1369096504
+            },
+            "quantity": 1,
+            "plan": {
+              "interval": "month",
+              "name": "Some Test",
+              "amount": 10000,
+              "currency": "usd",
+              "id": "test",
+              "object": "plan",
+              "livemode": false,
+              "interval_count": 1,
+              "trial_period_days": null
+            },
+            "description": null
+          }
+        ],
+        "count": 1,
+        "object": "list",
+        "url": "/v1/invoices/in_1UwY2Z2y5DrmFu/lines"
+      },
+      "subtotal": 10000,
+      "total": 10000,
+      "customer": "cus_00000000000000",
+      "object": "invoice",
+      "attempted": false,
+      "closed": true,
+      "paid": true,
+      "livemode": false,
+      "attempt_count": 0,
+      "amount_due": 10000,
+      "currency": "usd",
+      "starting_balance": 0,
+      "ending_balance": 0,
+      "next_payment_attempt": null,
+      "charge": "ch_00000000000000",
+      "discount": null
+    }
+  }
+}
