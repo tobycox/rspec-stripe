@@ -6,6 +6,6 @@ Gem::Specification.new do |s|
   s.description = 'An rspec helper for mocking various Stripe objects'
   s.authors     = ['Toby Cox']
   s.email       = 'toby@tobycox.com'
-  s.files       = ['lib/rspec_stripe_helper.rb']
+  s.files       = ['lib/rspec-stripe.rb', 'lib/rspec_stripe_helper.rb']
   s.homepage    = 'http://github.org/half_brick/stripe-rspec'
 end
