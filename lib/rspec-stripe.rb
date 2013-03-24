@@ -1,1 +1,1 @@
-include 'rspec_stripe_helper.rb'
+require 'rspec_stripe_helper.rb'
