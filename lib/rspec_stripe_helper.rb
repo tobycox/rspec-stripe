@@ -3,12 +3,7 @@ require 'stripe'
 require 'stripe/mock/event'
 require 'json'
 
-class StripeMocksHelper
-	attr_accessor :webhook_url
-
-	def initialize(webhook_url)
-		self.webhook_url = webhook_url
-	end
+class RspecStripeHelper
 	
 	def field_webhook(name, params = {})
 		params = webhook_body name, params		

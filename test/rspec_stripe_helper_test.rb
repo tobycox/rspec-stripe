@@ -1,9 +1,8 @@
-require_relative 'my_app.rb'
-require_relative '../lib/stripe_mocks_helper.rb'
+require_relative '../lib/rspec_stripe_helper.rb'
 
-describe StripeMocksHelper do
+describe RspecStripeHelper do
 	it "should set up the mock correctly for requests within the block" do
-		helper = StripeMocksHelper.new('webhooks')
+		helper = RspecStripeHelper.new
 		helper.field_webhook 'invoice.created' do |body| 
 			e = Stripe::Event.retrieve		
 			e.should_not be_nil
