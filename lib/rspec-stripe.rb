@@ -1,1 +1,1 @@
-require 'rspec_stripe_helper.rb'
+require 'rspec_stripe_webhook_helper.rb'

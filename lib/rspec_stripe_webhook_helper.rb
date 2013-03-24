@@ -3,14 +3,16 @@ require 'stripe'
 require 'stripe/mock/event'
 require 'json'
 
-class RspecStripeHelper
+class RspecStripeWebhookHelper
 	
-	def field_webhook(name, params = {})
+	def handle(name, params = {})
 		params = webhook_body name, params		
-		setup_mock name, params
+		add_webhook_stub params
 		yield params if block_given?
-		# TODO: Remove mock
+		remove_webhook_stub	
 	end
+
+	private
 
 	def webhook_body(name, params)
 		path = File.join(File.dirname(__FILE__), 'fixtures', "#{name}.json")
@@ -19,8 +21,12 @@ class RspecStripeHelper
 		fix.merge! params
 	end
 
-	def setup_mock(name, params)
+	def add_webhook_stub(params)
 		mock = Stripe::Mock::Event.new params
 		Stripe::Event.stub(:retrieve) { mock }
+	end
+	
+	def remove_webhook_stub
+		Stripe::Event.unstub!(:retrieve) 
 	end
 end
