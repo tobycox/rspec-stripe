@@ -4,7 +4,7 @@ require 'stripe/mock/event'
 require 'json'
 
 class RspecStripeWebhookHelper
-  
+
   def handle(name, params = {})
     params = webhook_body name, params    
     add_webhook_stub params

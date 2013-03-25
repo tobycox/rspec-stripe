@@ -8,7 +8,7 @@ Handling Webhooks
 
 You can easily test webhook handling code with:
 
-    RspecStripeWebhookHelper.new.handle('charge.failed') |body|
+    RspecStripeWebhookHelper.new.handle('charge.failed') { |body|
 		  # Your test code here
     }
 
