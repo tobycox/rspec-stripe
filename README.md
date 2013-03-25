@@ -19,3 +19,12 @@ For example:
 
 Will load a JSON fixture for the `charge.failed` webhook and will provide it to the block as the `body` parameter.
 It will also stub the `Stripe::Event.retrieve` method and return a Stripe::Event mock object that matches the JSON in `body`. The stub is only applied within the scope of the block.
+
+You can also override property values in the JSON and Stripe Event object by passing in a hash.
+
+For example:
+
+    RspecStripeWebhookHelper.new.handle('charge.failed', { :livemode => true }) { |body|
+		  # Your test code here
+    }
+
