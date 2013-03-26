@@ -9,6 +9,16 @@ describe RspecStripeWebhookHelper do
       e.id.should == body["id"]
     end
   end
+
+  it "should override body parameters" do
+    params = { :id => 1234, :data => { :test => '1234' } } 
+    RspecStripeWebhookHelper.handle('invoice.created', params) do |body| 
+      e = Stripe::Event.retrieve    
+      e.id.should == params[:id]
+      e.data[:test].should_not be_nil
+      e.data[:test].should == params[:data][:test]
+    end
+  end
 end
 
 describe Stripe::Mock::Event do
