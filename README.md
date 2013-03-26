@@ -13,7 +13,7 @@ This gem contains JSON fixtures for common Stripe events (these are yet to be fu
 
 For example:
 
-    RspecStripeWebhookHelper.new.handle('charge.failed') { |body|
+    RspecStripeWebhookHelper.handle('charge.failed') { |body|
 		  # Your test code here
     }
 
@@ -24,7 +24,7 @@ You can also override property values in the JSON and Stripe Event object by pas
 
 For example:
 
-    RspecStripeWebhookHelper.new.handle('charge.failed', { :livemode => true }) { |body|
+    RspecStripeWebhookHelper.handle('charge.failed', { :livemode => true }) { |body|
 		  # Your test code here
     }
 
