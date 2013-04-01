@@ -1,0 +1,34 @@
+{
+  "created": 1326853478,
+  "livemode": false,
+  "id": "evt_00000000000000",
+  "type": "customer.subscription.trial_will_end",
+  "object": "event",
+  "data": {
+    "object": {
+      "plan": {
+        "interval": "month",
+        "name": "Toby Test",
+        "amount": 10000,
+        "currency": "usd",
+        "id": "test_00000000000000",
+        "object": "plan",
+        "livemode": false,
+        "interval_count": 1,
+        "trial_period_days": null
+      },
+      "object": "subscription",
+      "start": 1363826104,
+      "status": "trialing",
+      "customer": "cus_00000000000000",
+      "cancel_at_period_end": false,
+      "current_period_start": 1363826104,
+      "current_period_end": 1366504504,
+      "ended_at": null,
+      "trial_start": 1364848245,
+      "trial_end": 1365107445,
+      "canceled_at": null,
+      "quantity": 1
+    }
+  }
+}

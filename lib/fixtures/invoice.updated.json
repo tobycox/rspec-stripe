@@ -2,7 +2,7 @@
   "created": 1326853478,
   "livemode": false,
   "id": "evt_00000000000000",
-  "type": "invoice.created",
+  "type": "invoice.updated",
   "object": "event",
   "data": {
     "object": {
@@ -47,7 +47,7 @@
       "total": 10000,
       "customer": "cus_00000000000000",
       "object": "invoice",
-      "attempted": false,
+      "attempted": true,
       "closed": true,
       "paid": true,
       "livemode": false,
@@ -59,6 +59,11 @@
       "next_payment_attempt": null,
       "charge": "ch_00000000000000",
       "discount": null
+    },
+    "previous_attributes": {
+      "lines": [
+
+      ]
     }
   }
 }

@@ -2,7 +2,7 @@
   "created": 1326853478,
   "livemode": false,
   "id": "evt_00000000000000",
-  "type": "charge.failed",
+  "type": "charge.succeeded",
   "object": "event",
   "data": {
     "object": {
@@ -10,7 +10,7 @@
       "object": "charge",
       "created": 1363860111,
       "livemode": false,
-      "paid": false,
+      "paid": true,
       "amount": 10000,
       "currency": "usd",
       "refunded": false,

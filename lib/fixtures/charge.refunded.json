@@ -1,56 +1,56 @@
 {
-    "created": 1326853478,
-    "livemode": false,
-    "id": "evt_00000000000000",
-    "type": "charge.refunded",
-    "object": "event",
-    "data": {
-        "object": {
-            "id": "ch_00000000000000",
-            "object": "charge",
-            "created": 1363860111,
-            "livemode": false,
-            "paid": true,
-            "amount": 10000,
-            "currency": "usd",
-            "refunded": true,
-            "fee": 320,
-            "fee_details": [
-                {
-                    "amount": 320,
-                    "currency": "usd",
-                    "type": "stripe_fee",
-                    "description": "Stripe processing fees",
-                    "application": null,
-                    "amount_refunded": 0
-                }
-            ],
-            "card": {
-                "object": "card",
-                "last4": "4242",
-                "type": "Visa",
-                "exp_month": 5,
-                "exp_year": 2015,
-                "fingerprint": "HRDFrLeUdLJXJGgw",
-                "country": "US",
-                "name": null,
-                "address_line1": null,
-                "address_line2": null,
-                "address_city": null,
-                "address_state": null,
-                "address_zip": null,
-                "address_country": null,
-                "cvc_check": null,
-                "address_line1_check": null,
-                "address_zip_check": null
-            },
-            "captured": true,
-            "failure_message": null,
-            "amount_refunded": 0,
-            "customer": null,
-            "invoice": null,
-            "description": null,
-            "dispute": null
+  "created": 1326853478,
+  "livemode": false,
+  "id": "evt_00000000000000",
+  "type": "charge.refunded",
+  "object": "event",
+  "data": {
+    "object": {
+      "id": "ch_00000000000000",
+      "object": "charge",
+      "created": 1363860111,
+      "livemode": false,
+      "paid": true,
+      "amount": 10000,
+      "currency": "usd",
+      "refunded": true,
+      "fee": 320,
+      "fee_details": [
+        {
+          "amount": 320,
+          "currency": "usd",
+          "type": "stripe_fee",
+          "description": "Stripe processing fees",
+          "application": null,
+          "amount_refunded": 0
         }
+      ],
+      "card": {
+        "object": "card",
+        "last4": "4242",
+        "type": "Visa",
+        "exp_month": 5,
+        "exp_year": 2015,
+        "fingerprint": "HRDFrLeUdLJXJGgw",
+        "country": "US",
+        "name": null,
+        "address_line1": null,
+        "address_line2": null,
+        "address_city": null,
+        "address_state": null,
+        "address_zip": null,
+        "address_country": null,
+        "cvc_check": null,
+        "address_line1_check": null,
+        "address_zip_check": null
+      },
+      "captured": true,
+      "failure_message": null,
+      "amount_refunded": 0,
+      "customer": null,
+      "invoice": null,
+      "description": null,
+      "dispute": null
     }
+  }
 }
