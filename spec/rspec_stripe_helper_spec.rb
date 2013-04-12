@@ -17,6 +17,8 @@ describe RspecStripeWebhookHelper do
       e.id.should == params[:id]
       e.data[:test].should_not be_nil
       e.data[:test].should == params[:data][:test]
+      e.id.should eq body[:id]
+      e.data.should eq body[:data]
     end
   end
 end
